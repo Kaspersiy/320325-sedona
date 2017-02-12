@@ -1,12 +1,12 @@
-.body
+body
 {
   font-size: 14px;
   line-height: 1.5;
-  color: rgb(51, 51, 51);
+  color: rgb(0, 0, 0);
   font-family: "PT Sans", Arial, Helvetica, sans-serif;
 }
 
-.h2
+h2
 {
   font-size: 30px;
   line-height: 0.8;
@@ -15,11 +15,1322 @@
   font-family: "PT Sans", Arial, Helvetica, sans-serif;
 }
 
-.h3
+h3
 {
   font-size: 21px;
   line-height: 1.238;
   color: #000000;
   font-weight: bold;
   font-family: "PT Sans", Arial, Helvetica, sans-serif;
+}
+
+b
+{
+  font-size: 21px;
+  font-weight: bold;
+  text-transform: uppercase;
+}
+
+p
+{
+  margin-top: 0px;
+  margin-bottom: 0px;
+  font-size: 14px;
+  text-transform: uppercase;
+  line-height: 1.5;
+  color: rgb(0, 0, 0);
+}
+
+.clearfix::after
+{
+  content: "";
+  display: table;
+  clear: both;
+}
+
+/* Блок Header */
+
+.main-header
+{
+  /*Только для оформления сетки*/
+    outline: 1px solid green;
+    background-color: white;
+}
+
+.main-header-container
+{
+  width: 1200px;
+  height: 56px;
+  margin: 0 auto;
+/*Только для оформления сетки*/
+  outline: 1px solid red;
+}
+
+.main-header-navigation
+{
+
+  width: 1056px;
+  height: 56px;
+  margin: 0 auto;
+/*Только для оформления сетки*/
+  outline: 1px solid yellow;
+}
+
+.main-header-navigation ul
+{
+  padding: 0px;
+  list-style-type: none;
+  font-weight: bold;
+  text-transform: uppercase;
+  line-height: 1.857;
+}
+
+.main-header-navigation li
+{
+  float: left;
+  margin-top: 16px;
+  padding: 0px;
+  list-style-position: inside;
+  /*Только для оформления сетки*/
+    outline: 1px solid grey;
+}
+
+.main-header-navigation li:nth-child(2)
+{
+  margin-left: 148px;
+}
+
+.main-header-navigation li:nth-child(3)
+{
+  width: 137px;
+  margin-left: 121px;
+  outline: 0px;
+}
+
+.main-header-navigation li:nth-child(4)
+{
+  margin-left: 128px;
+}
+
+.main-header-navigation li:nth-child(5)
+{
+    float: right;
+}
+
+.main-header-logo
+{
+  position: absolute;
+  z-index: 99;
+  margin-left: 459px;
+  display: inline-block;
+}
+
+/* Конец блока Header */
+
+
+/*Начало основного блока Index.html*/
+.container
+{
+  width: 1200px;
+  margin: 0 auto;
+/*Только для оформления сетки*/
+  outline: 1px solid red;
+}
+
+.index-logo
+{
+  margin-bottom: 60px;
+  /*Только для оформления сетки*/
+    outline: 1px solid blue;
+}
+
+.features
+{
+  text-align: center;
+  /*Только для оформления сетки*/
+  outline: 1px solid green;
+}
+
+.pre-features
+{
+  /*Только для оформления сетки*/
+    outline: 2px solid yellow;
+}
+
+.pre-features > b
+{
+  display: inline-block;
+  margin-bottom: 30px;
+  line-height: 1.238;
+  /*Только для оформления сетки*/
+  outline: 1px solid brown;
+}
+
+.pre-features > p
+{
+  font-size: 14px;
+  color: rgb(51, 51, 51);
+  text-transform: uppercase;
+  line-height: 1.857;
+  /*Только для оформления сетки*/
+  outline: 1px solid brown;
+}
+
+.container-feature-photo
+{
+  /*Только для оформления сетки*/
+  outline: 1px solid green;
+}
+
+.container-feature-photo:nth-child(2)
+{
+  margin-top: 51px;
+}
+
+.features-container
+{
+  float: left;
+  min-height: 256px;
+  width: 400px;
+  background-color: #81b3d2;
+  /*Только для оформления сетки*/
+  outline: 1px solid yellow;
+}
+
+.features-container > p
+{
+  color: rgb(255, 255, 255);
+}
+
+.features-container > p:nth-child(1)
+{
+  margin-top: 57px;
+  font-size: 21px;
+  font-family: "PT Sans";
+  font-weight: bold;
+  text-transform: uppercase;
+  line-height: 1;
+  /*Только для оформления сетки*/
+  outline: 1px solid grey;
+}
+
+.features-container > p:nth-child(2)
+{
+  margin-top: 25.5px;
+  line-height: 1.5;
+  /*Только для оформления сетки*/
+  outline: 1px solid grey;
+}
+
+.features-container > p:nth-child(3)
+{
+  margin-top: 28.5px;
+  line-height: 1.5;
+  /*Только для оформления сетки*/
+  outline: 1px solid grey;
+}
+
+.container-feature-photo:nth-child(2) > img
+{
+  float: right;
+  /*Только для оформления сетки*/
+  outline: 1px solid yellow;
+}
+
+.container-description-up
+{
+  margin-top: 60px;
+  /*Только для оформления сетки*/
+  outline: 1px solid #81b3d2;
+}
+
+.description
+{
+  float: left;
+  /*Только для оформления сетки*/
+  outline: 1px solid yellow;
+}
+
+.container-description-up .description:nth-child(1)
+{
+  margin-left: 73px;
+}
+
+.container-description-up .description:nth-child(2)
+{
+  margin-left: 134px;
+  padding-top: 2px;
+}
+
+.container-description-up .description:nth-child(3)
+{
+  float: right;
+  margin-right: 64px;
+  margin-top: -4px;
+}
+
+.container-description-up > .description > p:nth-child(2)
+{
+  margin-top: 32px;
+  font-size: 21px;
+  font-family: "PT Sans";
+  color: rgb(0, 0, 0);
+  font-weight: bold;
+  text-transform: uppercase;
+  line-height: 1;
+  /*Только для оформления сетки*/
+  outline: 1px solid blue;
+}
+
+.container-description-up > .description > p:nth-child(3)
+{
+  margin-top: 27.5px;
+  font-size: 14px;
+  font-family: "PT Sans";
+  color: rgb(51, 51, 51);
+  text-transform: uppercase;
+  line-height: 1.5;
+  /*Только для оформления сетки*/
+  outline: 1px solid blue;
+}
+
+.container-description-up > .description > img:nth-child(1)
+{
+  /*Только для оформления сетки*/
+  outline: 1px solid green;
+}
+
+.container-feature-photo:nth-child(4)
+{
+  margin-top: 83.5px;
+}
+
+.container-feature-photo:nth-child(4) > img
+{
+  float: left;
+  /*Только для оформления сетки*/
+  outline: 1px solid yellow;
+}
+
+.container-description-down
+{
+  margin-top: 0px;
+  background-color: #eeeeee;
+  /*Только для оформления сетки*/
+  outline: 1px solid #81b3d2;
+}
+
+.container-description-down .description:nth-child(1)
+{
+  margin-left: 94px;
+}
+
+.container-description-down .description:nth-child(2)
+{
+  margin-left: 166px;
+}
+
+.container-description-down .description:nth-child(3)
+{
+  float: right;
+  margin-right: 70px;
+}
+
+.container-description-down > .description > p:nth-child(1)
+{
+  margin-top: 50px;
+  /*Только для оформления сетки*/
+  outline: 1px solid blue;
+}
+
+.container-description-down > .description > p:nth-child(2)
+{
+  margin-top: 27.5px;
+  /*Только для оформления сетки*/
+  outline: 1px solid blue;
+}
+
+.container-description-down > .description > p:nth-child(3)
+{
+  margin-top: 24px;
+  margin-bottom: 62px;
+  /*Только для оформления сетки*/
+  outline: 1px solid blue;
+}
+
+.search-of-hotel
+{
+  padding-top: 54px;
+  /*Только для оформления сетки*/
+  outline: 1px solid blue;
+}
+
+.up-section-search
+{
+  padding-bottom: 135px;
+  text-align: center;
+  /*Только для оформления сетки*/
+  outline: 1px solid grey;
+}
+
+.up-section-search > p:nth-child(1) > b
+{
+  font-size: 30px;
+  font-family: "PT Sans";
+  color: rgb(0, 0, 0);
+  font-weight: bold;
+  text-transform: uppercase;
+  line-height: 0.8;
+}
+
+.up-section-search > p:nth-child(1)
+{
+  margin-bottom: 29px;
+}
+
+.up-section-search > p:nth-child(2)
+{
+  line-height: 1.714;
+}
+
+.search-of-hotel-in-sedona
+{
+  position: relative;
+  top: -86px;
+  float: left;
+  margin-left: 316px;
+  padding: 0px;
+  width: 568px;
+  text-align: center;
+  background-color: white;
+  /*Только для оформления сетки*/
+  outline: 1px solid blue;
+}
+
+.header-article
+{
+  position: relative;
+  display: inline-block;
+  width: 568px;
+  min-height: 86px;
+  background-color: #766357;
+  /*Только для оформления сетки*/
+  outline: 1px solid green;
+}
+
+.header-article > h2
+{
+  margin: 0px;
+  margin-top: 33px;
+  color: white;
+  font-size: 21px;
+  font-weight: bold;
+  text-transform: uppercase;
+  line-height: 1.238;
+}
+
+
+.accommodation-form
+{
+  /*Только для оформления сетки*/
+  outline: 1px solid red;
+}
+
+.long-line
+{
+  text-align: center;
+  font-size: 14px;
+  font-family: "PT Sans";
+  color: rgb(0, 0, 0);
+  font-weight: bold;
+  text-transform: uppercase;
+  /*Только для оформления сетки*/
+  outline: 1px solid yellow;
+}
+
+.long-line:nth-child(1)
+{
+  margin-top: 55px;
+  margin-bottom: 29px;
+}
+
+.long-line > p
+{
+  float: left;
+  margin-left: 55px;
+  margin-top: 8px;
+}
+
+.dates
+{
+  float: right;
+  margin-right: 55px;
+  width: 346px;
+  background-color: #f2f2f2;
+}
+
+.dates > p
+{
+  float: left;
+  margin-left: 12px;
+  margin-top: 8px;
+}
+
+.dates > img
+{
+  float: right;
+  margin-right: 9px;
+  margin-top: 8px;
+  margin-bottom: 8px;
+}
+
+.short-line-block
+{
+  margin-top: 30px;
+  /*Только для оформления сетки*/
+  outline: 1px solid brown;
+}
+
+.short-line
+{
+  text-align: center;
+  font-size: 14px;
+  font-family: "PT Sans";
+  color: rgb(0, 0, 0);
+  font-weight: bold;
+  text-transform: uppercase;
+  /*Только для оформления сетки*/
+  outline: 1px solid blue;
+}
+
+.short-line:nth-child(1)
+{
+  float: left;
+}
+
+.short-line:nth-child(2)
+{
+  float: right;
+}
+
+.short-line > p:nth-child(1)
+{
+  float: left;
+  margin-left: 55px;
+  margin-top: 8px;
+}
+
+.short-line-block output
+{
+  float: left;
+  margin-top: 8px;
+  margin-left: 13px;
+  line-height: 1.5;
+}
+
+.counter
+{
+  float: right;
+  width: 114px;
+  height: 38px;
+  background-color: #f2f2f2;
+}
+
+.short-line-block > .short-line:nth-child(1) > .counter:nth-child(2)
+{
+  margin-left: 41px;
+}
+
+.short-line-block > .short-line:nth-child(2) > .counter:nth-child(2)
+{
+  margin-right: 55px;
+}
+
+.short-line-block > .short-line:nth-child(2) > p
+{
+  margin-left: 20px;
+  margin-right: 27px;
+}
+
+.counter > button:nth-child(1)
+{
+  float: left;
+  margin: 0px;
+  padding: 0px;
+  width: 38px;
+  height: 38px;
+}
+
+.counter > button:nth-child(3)
+{
+  float: right;
+  padding: 0px;
+  margin: 0px;
+  width: 38px;
+  height: 38px;
+}
+
+.counter-button:nth-child(1)::after
+{
+  content: "";
+  display: block;
+  margin-left: 11px;
+  width: 12px;
+  height: 3px;
+  background-color: #a9a9a9;
+}
+
+.counter-button:nth-child(3)::before,
+.counter-button:nth-child(3)::after
+{
+  content: "";
+  position: absolute;
+  margin-top: -1px;
+  margin-left: -6px;
+  width: 11px;
+  height: 3px;
+  background-color: #a9a9a9;
+}
+
+.counter-button:nth-child(3)::after
+{
+  transform: rotate(90deg);
+}
+
+.btn-search-of-hotel-in-sedona
+{
+  margin-top: 54px;
+  margin-bottom: 55px;
+  height: 58px;
+  width: 458px;
+  font-size: 21px;
+  font-family: "PT Sans";
+  color: white;
+  font-weight: bold;
+  text-transform: uppercase;
+  line-height: 1.238;
+  background-color: #81b3d2;
+  border:0px;
+}
+
+.down-section-search
+{
+  /*Только для оформления сетки*/
+  outline: 1px solid blue;
+}
+
+.down-section-search img
+{
+  position: absolute;
+  display: inline-block;
+  margin-top: 0px;
+  margin-left: -884px;
+  padding: 0px;
+  z-index: -1;
+}
+
+/*Конец основного блока Index.html*/
+/*Начало блока Подвал*/
+
+.main-footer
+{
+  position: relative;
+  top: -8px;
+  min-height: 120px;
+  /*Только для оформления сетки*/
+  outline: 1px solid blue;
+}
+
+.container-footer
+{
+  width: 1200px;
+  height: 120px;
+  margin: 0 auto;
+  background-color: white;
+  opacity: 0.9;
+  /*Только для оформления сетки*/
+  outline: 1px solid green;
+}
+
+
+.footer-left-side
+{
+  float: left;
+  margin-left: 132px;
+  margin-top: 49px;
+  margin-right: 256px;
+  /*Только для оформления сетки*/
+  outline: 1px solid yellow;
+}
+
+.footer-left-side > p
+{
+  font-size: 21px;
+  font-family: "PT Sans";
+  color: rgb(0, 0, 0);
+  font-weight: bold;
+  text-transform: uppercase;
+  line-height: 1.238;
+}
+
+.footer-social
+{
+display: inline-block;
+margin-top: 36px;
+  /*Только для оформления сетки*/
+  outline: 1px solid yellow;
+}
+
+.footer-social > a:nth-child(1)
+{
+  float: left;
+  margin-right: 6px;
+}
+
+.footer-social > a:nth-child(2)
+{
+  margin-right: 6px;
+}
+
+.footer-social > a:nth-child(3)
+{
+  float: right;
+}
+
+.footer-copyright
+{
+  float: right;
+  margin-right: 103px;
+  margin-top: 41px;
+  /*Только для оформления сетки*/
+  outline: 1px solid yellow;
+}
+
+.footer-copyright > p
+{
+  display: inline-block;
+  margin-top: 7px;
+  font-size: 14px;
+  font-family: "PT Sans";
+  color: rgb(0, 0, 0);
+  text-transform: uppercase;
+  line-height: 1.857;
+}
+
+.footer-copyright > a
+{
+  display: inline-block;
+  float: right;
+}
+
+/*Конец блока Подвал и Index.html*/
+
+
+
+
+
+
+
+
+
+
+
+
+
+/* Начало основного блока страницы Hotels.html*/
+.background-img
+{
+  position: absolute;
+  z-index: 1;
+  /*Только для оформления сетки*/
+  outline: 1px solid blue;
+}
+
+.filter
+{
+  position: relative;
+  z-index: 2;
+  min-height: 217px;
+  /*Только для оформления сетки*/
+  outline: 3px solid yellow;
+}
+
+.infrastructure
+{
+  float: left;
+  margin-left: 71px;
+  /*Только для оформления сетки*/
+  outline: 1px solid red;
+}
+
+.infrastructure > p
+{
+  margin-top: 29.5px;
+  color: rgb(255, 255, 255);
+  line-height: 1.313;
+  /*Только для оформления сетки*/
+  outline: 1px solid yellow;
+}
+
+.infrastructure > p > b
+{
+  font-size: 16px;
+  font-family: "PT Sans";
+  font-weight: bold;
+  text-transform: uppercase;
+}
+
+.filter-checkbox:nth-child(2)
+{
+  margin-top: 22.5px;
+  /*Только для оформления сетки*/
+  outline: 1px solid yellow;
+}
+
+.filter-checkbox:nth-child(3), .filter-checkbox:nth-child(4)
+{
+  margin-top: 24px;
+  /*Только для оформления сетки*/
+  outline: 1px solid yellow;
+}
+
+.filter-checkbox > label
+{
+  position: relative;
+  float: left;
+  width: 26px;
+  height: 22px;
+  /*Только для оформления сетки*/
+  outline: 1px solid yellow;
+}
+
+input[type=checkbox] {
+    display: none;
+}
+
+input[type="checkbox"] + span {
+ position: absolute;
+ left: 0;
+ top: 0;
+ width: 100%;
+ height: 100%;
+ background: url("../img/checkbox.png") no-repeat;
+ cursor: pointer;
+}
+
+input[type="checkbox"]:checked + span {
+ background: url("../img/checkbox.png") no-repeat;
+ background-position: 0 -25px;
+}
+
+.filter-checkbox > p
+{
+  float: left;
+  margin-left: 14px;
+  font-size: 14px;
+  font-family: "PT Sans";
+  color: rgb(255, 255, 255);
+  text-transform: uppercase;
+  line-height: 22px;
+  /*Только для оформления сетки*/
+  outline: 1px solid yellow;
+}
+
+.housing-type
+{
+  float: left;
+  margin-left: 115px;
+  /*Только для оформления сетки*/
+  outline: 1px solid red;
+}
+
+.housing-type > p
+{
+  margin-top: 29.5px;
+  color: rgb(255, 255, 255);
+  line-height: 1.313;
+  /*Только для оформления сетки*/
+  outline: 1px solid yellow;
+}
+
+.housing-type > p > b
+{
+  font-size: 16px;
+  font-family: "PT Sans";
+  font-weight: bold;
+  text-transform: uppercase;
+}
+
+.cost-range
+{
+  float: right;
+  margin-right: 73px;
+  margin-top: 29.5px;
+  width: 328px;
+  color: #ffffff;
+  text-transform: uppercase;
+  /*Только для оформления сетки*/
+  outline: 1px solid red;
+}
+
+.cost-range-title
+{
+  margin-bottom: 10.5px;
+  font-size: 16px;
+  font-family: "PT Sans";
+  color: rgb(255, 255, 255);
+  font-weight: bold;
+  text-transform: uppercase;
+  line-height: 1.313;
+}
+
+.cost-control
+{
+  position: relative;
+  margin-bottom: 20px;
+  margin-left: 10px;
+  height: 36px;
+  font-size: 0;
+  border: 2px solid #ffffff;
+  border-radius: 2px;
+}
+
+.cost-control::after
+{
+  content:"";
+  position: absolute;
+  top: 50%;
+  left: 50%;
+  width: 2px;
+  height: 22px;
+  background: #ffffff;
+  transform: translate(-50%, -50%);
+}
+
+.cost-control label
+{
+  display: inline-block;
+  font-size: 14px;
+  font-family: "PT Sans";
+  color: rgb(255, 255, 255);
+  text-transform: uppercase;
+  line-height: 33px;
+  cursor: pointer;
+  /*Только для оформления сетки*/
+  outline: 1px solid red;
+}
+
+.cost-control label input
+{
+  line-height: 29px;
+}
+
+.cost-control .min-cost,
+.cost-control .max-cost
+{
+  width: 92px;
+  padding-left: 65px;
+}
+
+.cost-control input
+{
+  margin: 0;
+  margin-left: 5px;
+  width: 50px;
+  color: inherit;
+  font: inherit;
+  background: none;
+  border: none;
+  outline: none;
+}
+
+.range-control
+{
+  position: relative;
+
+  margin-bottom: 32px;
+}
+
+.range-control .scale
+{
+  height: 2px;
+  background: rgba(255, 255, 255, 0.3);
+}
+
+.range-control .bar
+{
+  width: 80%;
+  height: 2px;
+  background: #ffffff;
+}
+
+.range-toggle
+{
+  position: absolute;
+  top: -9px;
+  width: 4px;
+  height: 4px;
+  background: #ababab;
+  border: 8px solid #ffffff;
+  border-radius: 50%;
+  box-shadow: 0 2px 1px 0 rgba(0, 1, 1, 0.2);
+  cursor: pointer;
+}
+
+.range-toggle-min
+{
+  left: 0;
+}
+
+.range-toggle-max
+{
+  left: 80%;
+}
+
+.range-toggle:hover
+{
+  background: #1c4f80
+}
+
+.btn-accept-filter
+{
+  display: block;
+  margin: 0 auto;
+  padding: 6px 35px;
+
+  font-size: 14px;
+  line-height: 1.5;
+  color: #ffffff;
+  text-transform: uppercase;
+  background: transparent;
+  border: 2px solid #ffffff;
+  border-radius: 2px;
+  cursor: pointer;
+}
+
+.btn-accept-filter:hover
+{
+  color: #000000;
+  background: #ffffff;
+}
+
+.result-of-filter
+{
+  margin-bottom: 8px;
+  /*Только для оформления сетки*/
+  outline: 1px solid brown;
+}
+
+.result-title
+{
+  margin-top: 28.5px;
+  /*Только для оформления сетки*/
+  outline: 1px solid red;
+}
+
+.result-title > h3
+{
+  float: left;
+  margin: 0;
+  margin-left: 73px;
+  font-size: 21px;
+  font-family: "PT Sans";
+  color: rgb(0, 0, 0);
+  font-weight: bold;
+  text-transform: uppercase;
+  line-height: 26px;
+  /*Только для оформления сетки*/
+  outline: 1px solid yellow;
+}
+
+.result-sorting-category
+{
+  float: left;
+  margin-top: 8px;
+  /*Только для оформления сетки*/
+  outline: 1px solid yellow;
+}
+
+.result-sorting-category >h4
+{
+  float: left;
+  margin: 0;
+  margin-left: 49px;
+  font-size: 12px;
+  font-family: "PT Sans";
+  color: rgb(0, 0, 0);
+  text-transform: uppercase;
+  line-height: 18px;
+  /*Только для оформления сетки*/
+  outline: 1px solid yellow;
+}
+
+.result-sorting-category > ul
+{
+  float: left;
+  margin: 0;
+  margin-left: 41px;
+  padding: 0px;
+  font-size: 12px;
+  font-family: "PT Sans";
+  list-style-type: none;
+  text-transform: uppercase;
+  line-height: 18px;
+  /*Только для оформления сетки*/
+  outline: 1px solid yellow;
+}
+
+.result-sorting-category li
+{
+  float: left;
+  list-style-position: inside;
+  /*Только для оформления сетки*/
+    outline: 1px solid grey;
+}
+
+.result-sorting-category li > a
+{
+  color: #b1b1b1;
+  text-decoration: none;
+  border-bottom: 1px dotted #81b3d2;
+  cursor: pointer;
+}
+
+.result-sorting-category li:nth-child(2), .result-sorting-category li:nth-child(3)
+{
+  margin-left: 35px;
+}
+
+.result-sorting-category li > a:hover, .result-sorting-category li > a:active
+{
+  color: #81b3d2;
+  border-bottom: none;
+}
+
+.result-sorting-stars
+{
+  float: right;
+  margin-top: 12px;
+  margin-right: 73px;
+  line-height: 1;
+  /*Только для оформления сетки*/
+  outline: 1px solid yellow;
+}
+
+.sort-ascending
+{
+  float: left;
+  margin-right: 12px;
+  width: 11px;
+  height: 10px;
+  background: url("../img/up-down.png") no-repeat;
+  cursor: pointer;
+  /*Только для оформления сетки*/
+  outline: 1px solid red;
+}
+
+.sort-ascending:hover, .sort-ascending:active
+{
+  background-position: -14px 0;
+}
+
+.sort-descending
+{
+  float: right;
+  width: 11px;
+  height: 10px;
+  background: url("../img/up-down.png") no-repeat;
+  background-position: 0 -13px;
+  /*Только для оформления сетки*/
+  outline: 1px solid red;
+}
+
+.sort-descending:hover, .sort-descending:active
+{
+  background-position: -14px -13px;
+}
+
+.offer
+{
+  min-height: 151px;
+  border-top: 1px solid #e5e5e5;
+}
+
+.offer:nth-child(4)
+{
+  border-bottom: 1px solid #e5e5e5;
+}
+
+.offer > img
+{
+  float: left;
+  margin-top: 30px;
+  /*Только для оформления сетки*/
+  outline: 1px solid yellow;
+}
+
+.selected-hotels
+{
+  float: left;
+  margin-top: 30px;
+  margin-left: 24px;
+  /*Только для оформления сетки*/
+  outline: 1px solid red;
+}
+
+.selected-hotels > h3
+{
+  margin: 0;
+  margin-left: 6px;
+  padding: 0;
+  font-size: 21px;
+  font-family: "PT Sans";
+  color: rgb(0, 0, 0);
+  font-weight: bold;
+  text-transform: uppercase;
+  line-height: 0.7;
+  /*Только для оформления сетки*/
+  outline: 1px solid yellow;
+}
+
+.offer-accommodation
+{
+  margin: 0;
+  padding: 0;
+  border-spacing: 6px 0;
+  margin-top: 15px;
+}
+
+.offer-accommodation tr:nth-child(1) td
+{
+  padding: 0;
+  height: 33.5px;
+  vertical-align: top;
+  /*Только для оформления сетки*/
+  outline: 1px solid green;
+}
+
+.offer-accommodation tr:nth-child(1) td p
+{
+  font-size: 14px;
+  font-family: "PT Sans";
+  color: rgb(51, 51, 51);
+  text-transform: uppercase;
+  line-height: 1;
+}
+
+.offer-accommodation tr td:nth-child(1)
+{
+  width: 110px;
+}
+
+.offer-accommodation tr td:nth-child(2)
+{
+  width: 142px;
+}
+
+.offer-accommodation tr:nth-child(2) td
+{
+  padding: 0;
+  height: 27px;
+  text-align: center;
+  vertical-align: middle;
+  /*Только для оформления сетки*/
+  outline: 1px solid green;
+}
+
+.offer-accommodation tr:nth-child(2) td a
+{
+  line-height: 1;
+  text-decoration: none;
+}
+
+.offer-accommodation tr:nth-child(2) td:nth-child(1) a
+{
+  font-size: 14px;
+  font-family: "PT Sans";
+  color: rgb(255, 255, 255);
+  font-weight: bold;
+  text-transform: uppercase;
+  padding-left:17px;
+  padding-right:16px;
+  padding-top:5px;
+  padding-bottom:5px;
+}
+
+.offer-accommodation tr:nth-child(2) td:nth-child(1)
+{
+  background-color: #81b3d2;
+}
+
+.offer-accommodation tr:nth-child(2) td:nth-child(2) a
+{
+  font-size: 14px;
+  font-family: "PT Sans";
+  color: rgb(255, 255, 255);
+  font-weight: bold;
+  text-transform: uppercase;
+  padding-left:17px;
+  padding-right:16px;
+  padding-top:5px;
+  padding-bottom:5px;
+}
+
+.offer-accommodation tr:nth-child(2) td:nth-child(2)
+{
+  background-color: #766357;
+}
+
+.rating
+{
+  float: right;
+  margin-top: 30px;
+  margin-right: 73px;
+  /*Только для оформления сетки*/
+  outline: 1px solid yellow;
+}
+
+.rating-stars-2
+{
+  width: 42px;
+  height: 17px;
+  background: url("../img/stars.png") no-repeat;
+}
+
+.rating-stars-3
+{
+  width: 65px;
+  height: 17px;
+  background: url("../img/stars.png") no-repeat;
+}
+
+.rating-stars-4
+{
+  width: 89px;
+  height: 17px;
+  background: url("../img/stars.png") no-repeat;
+}
+
+.rating-numbers
+{
+  margin-top: 64px;
+  width: 110px;
+  height: 27px;
+  background: #f2f2f2;
+}
+
+.rating-stars
+{
+  float: right;
+}
+
+.rating-numbers > p
+{
+  color: #666666;
+  font-size: 14px;
+  font-family: "PT Sans";
+  color: rgb(102, 102, 102);
+  text-transform: uppercase;
+  line-height: 27px;
+  text-align: center;
 }
