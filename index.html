@@ -9,26 +9,23 @@
   <body>
     <header class="main-header">
       <div class="main-header-container  clearfix">
-				<nav class="main-header-navigation">
+				<nav class="main-header-navigation clearfix">
           <div class="main-header-logo">
-            <a href="index.html"><img src="img/mail-header-logo.png" width="138" height="70" alt="City of Sedona"></a>
+            <a><img src="img/mail-header-logo.png" width="138" height="70" alt="City of Sedona"></a>
           </div>
           <ul>
-						<li class="active">
+						<li>
 							<a href="#">Информация</a>
 						</li>
-						<li class="active">
+						<li>
 							<a href="#">Фото и видео</a>
 						</li>
-<!--            <div class="main-header-logo">
-              <a href="index.html"><img src="img/mail-header-logo.png" width="138" height="70" alt="City of Sedona"></a>
-            </div> -->
             <li>
             </li>
-						<li class="active">
+						<li>
 							<a href="#">Карта штата</a>
 						</li>
-						<li class="active">
+						<li>
 							<a href="hotels.html">Гостиницы</a>
 						</li>
 					</ul>
@@ -50,7 +47,6 @@
             <p>— №1 —</p>
             <p>Седона — не аттракцион для туристов,<br>там течет своя жизнь</p>
           </div>
-<!--          <img src="img/photo-right-2.jpg" width="800" height="256" alt="Sedona-view-2"> -->
           <img src="img/photo-right-1.jpg" width="800" height="256" alt="Sedona-view-1">
         </div>
         <div class="container-description-up clearfix">
@@ -71,7 +67,6 @@
           </div>
         </div>
         <div class="container-feature-photo clearfix">
-<!--          <img src="img/photo-left-2.jpg" width="800" height="400" alt="Kanyyon-view-2"> -->
           <img src="img/photo-left-1.jpg" width="800" height="256" alt="Kanyyon-view-1">
           <div class="features-container">
             <p><b>Там есть<br>мост дьявола</b></p>
@@ -88,7 +83,7 @@
           <div class="description">
             <p><b>Красивая<br>дорога</b></p>
             <p>— №4 —</p>
-            <p>Езать в Седону из Лас-Вегаса совсем<br>не скучно!</p>
+            <p>Ехать в Седону из Лас- Вегаса совсем<br>не скучно!</p>
           </div>
           <div class="description">
             <p><b>Мало<br>туристов</b></p>
@@ -101,53 +96,47 @@
         <div class="up-section-search">
           <p><b>Заинтересовались?</b></p>
           <p>Укажите предполагаемые даты поездки,<br>и мы покажем вам лучшие предложения гостиниц в Седоне</p>
+            <div class="btn-search-of-hotel">
+              <a class="modal-search-btn" href="#"><b>Поиск гостиницы в Седоне</b></a>
+            </div>
         </div>
-        <article class="search-of-hotel-in-sedona clearfix">
-          <div class="header-article">
-            <h2>Поиск гостиницы в Седоне</h2>
-          </div>
-          <form class="accommodation-form" action="https://echo.htmlacademy.ru" method="get">
+
+        <div class="modal-content clearfix">
+          <form class="accommodation-form" action="https://echo.htmlacademy.ru" method="post">
             <div class="long-line clearfix">
-              <p>Дата заезда:</p>
-              <div class="dates">
-<!--                 <input type="date" name="arrival">                       убираю календарь, так как визуально он отличается от макета -->
-                <p>24 Апреля 2017</p>
-                <img src="img/calendar.png" width="21" height="22" alt="Calendar">
-              </div>
+              <label class="date-stamp"><p>Дата заезда:</p>
+                <input type="text" value="24 Апреля 2017" name="field-date">
+                <a class="calendar" href=#alt="calendar"></a>
+              </label>
             </div>
             <div class="long-line clearfix">
-              <p>Дата выезда:</p>
-              <div class="dates">
-<!--                <input type="date" name="departure">                убираю календарь, так как визуально он отличается от макета -->
-                <p>4 июля 2017</p>
-                <img src="img/calendar.png" width="21" height="22" alt="Calendar">
-              </div>
+              <label class="date-stamp"><p>Дата выезда:</p>
+                <input type="text" value="4 июля 2017" name="field-date">
+                <a class="calendar" href=# alt="calendar"></a>
+              </label>
             </div>
             <div class="short-line-block clearfix">
             <div class="short-line">
-              <p>Взрослые:</p>
+              <label class="adult" for="adult-number"><p>Взрослые:</p> </label>
               <div class="counter">
-<!--                  <button class="counter-button" value="-adult" title="-"> <img src="img/-.png" width="12" height="3" alt="-"> </button>  -->   <!-- Оформить + и -  с помощью CSS-->
-                <button class="counter-button" value="-child" title="-"> </button>
-                <output name="adult-result">2</output>
-<!--                <button class="counter-button" value="+adult" title="+"> <img src="img/+.png" width="11" height="11" alt="+"> </button>   -->  <!-- Оформить + и -  с помощью CSS-->
-                <button class="counter-button" value="+adult" title="+"> </button>
+                <button class="counter-button" value="-adult" title="-" type="button" onclick="inc(1)"> </button>
+                <input type="text" value="2" name="adult-result" id="adult-number">
+                <button class="counter-button" value="+adult" title="+" type="button" onclick="inc(-1)"> </button>
               </div>
             </div>
             <div class="short-line">
-              <p>Дети:</p>
+              <label class="child" for="child-number"><p>Дети:</p></label>
               <div class="counter">
-      <!--          <button class="counter-button" value="-child" title="-"> <img src="img/-.png" width="12" height="3" alt="-"> </button>  -->  <!-- Оформить + и -  с помощью CSS-->
-                <button class="counter-button" value="-child" title="-"> </button>
-                <output name="child-result">0</output>
-      <!--          <button class="counter-button" value="+child" title="+"> <img src="img/+.png" width="11" height="11" alt="+"> </button>  -->  <!-- Оформить + и -  с помощью CSS-->
-                <button class="counter-button" value="+adult" title="+"> </button>
+                <button class="counter-button" value="-child" title="-" type="button" onclick="inc(1)"> </button>
+                <input type="text" value="0" name="child-result" id="child-number">
+                <button class="counter-button" value="+child" title="+" type="button" onclick="inc(-1)"> </button>
               </div>
             </div>
             </div>
             <button class="btn-search-of-hotel-in-sedona" value="find" type="submit">Найти</button>
-					</form>
-        </article>
+          </form>
+        </div>
+
         <div class="down-section-search">
           <img src="img/map.jpg" width="1200" height="594" alt="Map">
         </div>
@@ -158,16 +147,27 @@
         <div class="footer-left-side">
           <p>#visitsedona</p>
         </div>
-        <section class="footer-social">
-          <a class="social-btn social-btn-inst" href="#"><img src="img/t.png" width="46" height="48" alt="Twitter"></a>
-          <a class="social-btn social-btn-fb" href="#"><img src="img/f.png" width="46" height="48" alt="Facebook"></a>
-          <a class="social-btn social-btn-youtube" href="#"><img src="img/y.png" width="46" height="48" alt="YouTube"></a>
+        <section class="footer-social clearfix">
+          <a class="social-btn social-btn-inst" href=# alt="Twitter"></a>
+          <a class="social-btn social-btn-fb" href=# alt="Facebook"></a>
+          <a class="social-btn social-btn-youtube" href=# alt="YouTube"></a>
         </section>
         <section class="footer-copyright">
           <p>Website by</p>
-          <a class="btn" href="index.html"><img src="img/html_academy.png" width="113" height="39" alt="Twitter"></a>
+          <a class="html-logo-footer" href="index.html" alt="logo-html-academy"></a>
         </section>
       </div>
     </footer>
+
+    <script>
+      var link = document.querySelector(".modal-search-btn");
+      var popup = document.querySelector(".modal-content");
+
+      link.addEventListener("click", function(event) {
+        event.preventDefault();
+        popup.classList.toggle("modal-content-show");
+        });
+    </script>
+
   </body>
 </html>
