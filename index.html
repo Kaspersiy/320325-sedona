@@ -6,7 +6,8 @@
     <link rel="stylesheet" href="css/normalize.css">
     <link rel="stylesheet" href="css/style.css">
   </head>
-  <body>
+<!--  <body onload="init()"> -->
+  <body onload="init()">
     <header class="main-header">
       <div class="main-header-container  clearfix">
 				<nav class="main-header-navigation clearfix">
@@ -36,7 +37,7 @@
 			<div class="index-logo">
 				<img src="img/index-logo.jpg" width="1200" height="507" alt="Welcome to the Sedona">
 			</div>
-      <section class="features">
+      <div class="features">
         <div class="pre-features">
           <b>Седона — небольшой городок в Аризоне,<br>заслуживающий большего!</b>
           <p>Рассмотрим 5 причин, по которым Седона круче, чем Гранд Каньон!</p>
@@ -91,8 +92,8 @@
             <p>Большинство едет в Гранд Каньон и<br>толпится там</p>
           </div>
         </div>
-      </section>
-      <section class="search-of-hotel">
+      </div>
+      <div class="search-of-hotel">
         <div class="up-section-search">
           <p><b>Заинтересовались?</b></p>
           <p>Укажите предполагаемые даты поездки,<br>и мы покажем вам лучшие предложения гостиниц в Седоне</p>
@@ -104,20 +105,20 @@
         <div class="modal-content clearfix">
           <form class="accommodation-form" action="https://echo.htmlacademy.ru" method="post">
             <div class="long-line clearfix">
-              <label class="date-stamp"><p>Дата заезда:</p>
+              <label class="date-stamp"><span>Дата заезда:</span>
                 <input type="text" value="24 Апреля 2017" name="field-date">
-                <a class="calendar" href=#alt="calendar"></a>
+                <a class="calendar" href="#"></a>
               </label>
             </div>
             <div class="long-line clearfix">
-              <label class="date-stamp"><p>Дата выезда:</p>
+              <label class="date-stamp"><span>Дата выезда:</span>
                 <input type="text" value="4 июля 2017" name="field-date">
-                <a class="calendar" href=# alt="calendar"></a>
+                <a class="calendar" href="#"></a>
               </label>
             </div>
             <div class="short-line-block clearfix">
             <div class="short-line">
-              <label class="adult" for="adult-number"><p>Взрослые:</p> </label>
+              <label class="adult" for="adult-number"><span>Взрослые:</span> </label>
               <div class="counter">
                 <button class="counter-button" value="-adult" title="-" type="button" onclick="inc(1)"> </button>
                 <input type="text" value="2" name="adult-result" id="adult-number">
@@ -125,7 +126,7 @@
               </div>
             </div>
             <div class="short-line">
-              <label class="child" for="child-number"><p>Дети:</p></label>
+              <label class="child" for="child-number"><span>Дети:</span></label>
               <div class="counter">
                 <button class="counter-button" value="-child" title="-" type="button" onclick="inc(1)"> </button>
                 <input type="text" value="0" name="child-result" id="child-number">
@@ -140,34 +141,48 @@
         <div class="down-section-search">
           <img src="img/map.jpg" width="1200" height="594" alt="Map">
         </div>
-      </section>
+      </div>
     </main>
     <footer class="main-footer">
       <div class="container-footer clearfix">
         <div class="footer-left-side">
           <p>#visitsedona</p>
         </div>
-        <section class="footer-social clearfix">
-          <a class="social-btn social-btn-inst" href=# alt="Twitter"></a>
-          <a class="social-btn social-btn-fb" href=# alt="Facebook"></a>
-          <a class="social-btn social-btn-youtube" href=# alt="YouTube"></a>
-        </section>
-        <section class="footer-copyright">
+        <div class="footer-social clearfix">
+          <a class="social-btn social-btn-inst" href="#"></a>
+          <a class="social-btn social-btn-fb" href="#"></a>
+          <a class="social-btn social-btn-youtube" href="#"></a>
+        </div>
+        <div class="footer-copyright">
           <p>Website by</p>
-          <a class="html-logo-footer" href="index.html" alt="logo-html-academy"></a>
-        </section>
+          <a class="html-logo-footer" href="https://htmlacademy.ru"></a>
+        </div>
       </div>
     </footer>
 
     <script>
       var link = document.querySelector(".modal-search-btn");
       var popup = document.querySelector(".modal-content");
+/*      var close = popup.querySelector(".modal-content-close");
 
-      link.addEventListener("click", function(event) {
+
+      function init() {
+                      popup.style.display='none';
+                  }
+
+
+*/
+        link.addEventListener("click", function(event) {
         event.preventDefault();
+  /*      popup.style.display=''; */
         popup.classList.toggle("modal-content-show");
-        });
-    </script>
+      });
 
+
+
+
+
+
+    </script>
   </body>
 </html>
