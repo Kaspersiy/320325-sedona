@@ -1,0 +1,1 @@
+var link=document.querySelector(".modal-search-btn"),popup=document.querySelector(".modal-content");link.addEventListener("click",function(a){a.preventDefault();popup.classList.toggle("modal-content-show")});
